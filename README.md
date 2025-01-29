@@ -27,7 +27,13 @@ If you bought this Data Manager you will get every update / bug fix for free!
   ```
 
   ### How to reset / change global data key?
-  ![example](images/example_1.jpg)
+  Click on the data manager script, and scroll to the attributes properties, there you will find these variables:
+  ![example](images/example_1.jpg) <br>
+  [Custom_Studio_Data] will make that studio data and live server data will always be different. <br>
+  [Data_Key] will change both, live servers and studio datas. <br>
+  [Studio_Version] will change only studio data (only if Custom_Studio_Data is checked) <br>
+  [Debug] if checked then every time a value in player changes it will print player profile (useful for debugging only)
+  
 
 </details>
 
