@@ -17,11 +17,18 @@ If you bought this Data Manager you will get every update / bug fix for free!
 <details>
   <summary>Read more</summary>
 
+  #### How to implement data manager?
+  Create in ServerScriptService script, and copy-paste script below
+
   ```lua
   -- (Server Side Script)
   local DataManager = require(game.ServerScriptService.DataManager) -- path to mine data manager
   DataManager.init() -- initialize it so everything get loaded
   ```
+
+  ### How to reset / change global data key?
+  ![example](images/example_1.jpg)
+
 </details>
 
 ### Methods
