@@ -1,5 +1,7 @@
 ## Data Manager (ProfileStore) **0.1**
 
+<sub>The documentation is for people who have purchased my Data Manager, so if you haven't purchased it and you want to, then email me on discord (bartizer)</sub>
+
 > [!NOTE]
 > This is official version of my Data Manager using loleris ProfileStore module <br>
 > <strong><span style="color: blue;">Version: 0.1</span></strong>
@@ -10,12 +12,15 @@
 > This data manager had only basic tests, it can contain some bugs, if you find any bugs, contact me on discord <br>
 > <sub>DISCORD: **bartizer**</sub>
 
+> [!IMPORTANT]
+> I am from Poland so there will be a lot of grammatical errors in this documentation so if you know English well you can send me a grammatically corrected version on discord
+
 This data manager allows client to read-only access of player data, it's not using any instances for displaying values (excluding leaderstats)
 If you bought this Data Manager you will get every update / bug fix for free!
 
 ### Implementation
 <details>
-  <summary>Read more</summary>
+  <summary>Read more (Click)</summary>
 
   #### How to implement data manager?
   Create in ServerScriptService script, and copy-paste script below
@@ -34,12 +39,32 @@ If you bought this Data Manager you will get every update / bug fix for free!
   [Studio_Version] will change only studio data (only if Custom_Studio_Data is checked) <br>
   [Debug] if checked then every time a value in player changes it will print player profile (useful for debugging only)
   
+  ### How to add more variables into player?
+  If you expand DataManager module script you will find "Data" folder there, <br>
+  every instance added there will be converted into table / string / number / boolean  <br>
+  
+  for example, this: <br>
+  ![example_2](images/example_2.png) <br>
+  will look like this in profile.Data <br>
+  ```luau
+  {
+    ["Example1"] = {
+      ["StringExample"] = "StringValue"  
+    },
+    ["Example2"] = {
+      ["BoolExample"] = true
+    }
+  }
+  ```
+
+  ### How to add leaderstats?
+  To add leaderstats you need only to add **leaderstats** folder into Data, and the rest leave to the Data Manager :D
 
 </details>
 
 ### Methods
 <details>
-  <summary>Read more</summary>
+  <summary>Read more (Click)</summary>
 
   ```luau
   DataManager:GetProfile(player) -- [player profile]
