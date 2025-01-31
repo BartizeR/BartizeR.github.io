@@ -1,10 +1,10 @@
-## Data Manager (ProfileStore) **0.1**
+## Data Manager (ProfileStore) **r0.1bf**
 
 <sub>The documentation is for people who have purchased my Data Manager, so if you haven't purchased it and you want to, then email me on discord (bartizer)</sub>
 
 > [!NOTE]
 > This is official version of my Data Manager using loleris ProfileStore module <br>
-> <strong><span style="color: blue;">Version: 0.1</span></strong>
+> <strong><span style="color: blue;">Version: r0.1bf</span></strong>
 
 <sub>[Loleris - ProfileStore module](https://devforum.roblox.com/t/profilestore-save-your-player-data-easy-datastore-module/3190543/1)</sub>
 
@@ -103,6 +103,24 @@ If you bought this Data Manager you will get every update / bug fix for free!
   ```luau
   DataManager:MessageAsync(userId : number, message : {any?}) -- [boolean]
   ```
-  
-  
+</details>
+
+### Changelog
+
+| Symbol | Description | 
+  |------------|------------|
+  | r | Official release | 
+  | bf | Version containing bug fixes | 
+
+<details>
+  <summary>r0.1bf - <strong>(31.01.2025)</strong></summary>
+
+  **Server**  
+  - Fixed `DataManager:LoadBackup(profile)`, which was either not loading backups or, when loaded, kicking the player after rejoining.  
+
+  **Client**  
+  - Fixed `DataScript:GetData()`, which was returning a blank table when called too early.  
+  - Added `DataScript.IsReady` which returns boolean, returns true when client data loaded properly.
+  - Added `DataScript.WaitUntilReady()` which yield `task.wait()` until `DataScript.IsReady` becomes true.
+
 </details>
