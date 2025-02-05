@@ -121,6 +121,7 @@ If you bought this Data Manager you will get every update / bug fix for free!
   **Server**  
   - Added Developer Product handler.
   - Added `DataManager:PromptProductPurchase(player, productId)` function which prompts developer product purchase (only if it's setuped correctly)
+  - Added version checker (it will automatically inform you in studio output if new version came out!)
 </details>
 <details>
   <summary>r0.1bf - <strong>(31.01.2025)</strong></summary>
