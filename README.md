@@ -103,6 +103,9 @@ If you bought this Data Manager you will get every update / bug fix for free!
   ```luau
   DataManager:MessageAsync(userId : number, message : {any?}) -- [boolean]
   ```
+  ```luau
+  DataManager:PromptProductPurchase(player : Player, productId : number) -- 
+  ```
 </details>
 
 ### Changelog
@@ -113,6 +116,13 @@ If you bought this Data Manager you will get every update / bug fix for free!
   | bf | Version containing bug fixes | 
 
 <details>
+  <summary>r0.2 - <strong>(05.02.2025)</strong></summary>
+
+  **Server**  
+  - Added Developer Product handler.
+  - Added `DataManager:PromptProductPurchase(player, productId)` function which prompts developer product purchase (only if it's setuped correctly)
+</details>
+<details>
   <summary>r0.1bf - <strong>(31.01.2025)</strong></summary>
 
   **Server**  
@@ -122,5 +132,4 @@ If you bought this Data Manager you will get every update / bug fix for free!
   - Fixed `DataScript:GetData()`, which was returning a blank table when called too early.  
   - Added `DataScript.IsReady` which returns boolean, returns true when client data loaded properly.
   - Added `DataScript.WaitUntilReady()` which yield `task.wait()` until `DataScript.IsReady` becomes true.
-
 </details>
