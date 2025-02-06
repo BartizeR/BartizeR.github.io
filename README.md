@@ -125,7 +125,7 @@ If you bought this Data Manager you will get every update / bug fix for free!
   <summary>r0.3 - <strong>(06.02.2025)</strong></summary>
 
   **Server**  
-  - Added `DataManager:Version()` which displays info about current version.
+  - Added `DataManager:Version()` which displays info about Data Manager current version.
   - Added `DataManager:GetAllPlayers()` which returns table of user ids of players that ever joined your game
   - Added global data (main core of `DataManager:GetAllPlayers()` function) needs someknowledge to use it on your own
   - Fixed not removing replica from DataManager `Replicas` after player left server
