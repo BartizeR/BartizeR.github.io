@@ -1,10 +1,10 @@
-## Data Manager (ProfileStore) **r0.2**
+## Data Manager (ProfileStore) **r0.3**
 
 <sub>The documentation is for people who have purchased my Data Manager, so if you haven't purchased it and you want to, then email me on discord (bartizer)</sub>
 
 > [!NOTE]
 > This is official version of my Data Manager using loleris ProfileStore module <br>
-> <strong><span style="color: blue;">Version: r0.2</span></strong>
+> <strong><span style="color: blue;">Version: r0.3</span></strong>
 
 <sub>[Loleris - ProfileStore module](https://devforum.roblox.com/t/profilestore-save-your-player-data-easy-datastore-module/3190543/1)</sub>
 
@@ -106,6 +106,12 @@ If you bought this Data Manager you will get every update / bug fix for free!
   ```luau
   DataManager:PromptProductPurchase(player : Player, productId : number) -- 
   ```
+  ```luau
+  DataManager:GetAllPlayers() -- [{[UserId]: os.time()}]
+  ```
+  ```luau
+  DataManager:Version() -- 
+  ```
 </details>
 
 ### Changelog
@@ -115,6 +121,15 @@ If you bought this Data Manager you will get every update / bug fix for free!
   | r | Official release | 
   | bf | Version containing bug fixes | 
 
+<details>
+  <summary>r0.3 - <strong>(06.02.2025)</strong></summary>
+
+  **Server**  
+  - Added `DataManager:Version()` which displays info about current version.
+  - Added `DataManager:GetAllPlayers()` which returns table of user ids of players that ever joined your game
+  - Added global data (main core of `DataManager:GetAllPlayers()` function) needs someknowledge to use it on your own
+  - Fixed not removing replica from DataManager `Replicas` after player left server
+</details>
 <details>
   <summary>r0.2 - <strong>(05.02.2025)</strong></summary>
 
