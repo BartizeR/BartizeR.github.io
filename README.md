@@ -119,7 +119,7 @@ If you bought this Data Manager you will get every update / bug fix for free!
 | Symbol | Description | 
   |------------|------------|
   | r | Official release | 
-  | bf | Version containing bug fixes | 
+  | bf | Version containing major / game breaking bug fixes | 
 
 <details>
   <summary>r0.3 - <strong>(06.02.2025)</strong></summary>
