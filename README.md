@@ -85,7 +85,7 @@ If you bought this Data Manager you will get every update / bug fix for free!
   DataManager:AddValue(player : Player, path : string, addValue : (number | {any?})?) -- 
   ```
   ```luau
-  DataManager:SubValue(player : Player, path : string, addValue : (number | {any?})?) -- 
+  DataManager:SubValue(player : Player, path : string, subValue : (number | {any?})?) -- 
   ```
   ```luau
   DataManager:ResetData(userId : number) -- [boolean]
