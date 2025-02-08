@@ -1,10 +1,10 @@
-## Data Manager (ProfileStore) **r0.3bf**
+## Data Manager (ProfileStore) **r0.4**
 
 <sub>The documentation is for people who have purchased my Data Manager, so if you haven't purchased it and you want to, then email me on discord (bartizer)</sub>
 
 > [!NOTE]
 > This is official version of my Data Manager using loleris ProfileStore module <br>
-> <strong><span style="color: blue;">Version: r0.3bf</span></strong>
+> <strong><span style="color: blue;">Version: r0.4</span></strong>
 
 <sub>[Loleris - ProfileStore module](https://devforum.roblox.com/t/profilestore-save-your-player-data-easy-datastore-module/3190543/1)</sub>
 
