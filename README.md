@@ -122,6 +122,26 @@ If you bought this Data Manager you will get every update / bug fix for free!
   | bf | Version containing major / game breaking bug fixes | 
 
 <details>
+  <summary>r0.4 - <strong>(08.02.2025)</strong></summary>
+
+  **Server**  
+  - Added `DataManager:Clear(player, path)` function for easier cleaning all values from table
+  - Added experimental functions (only one for now - CreateFolders (Default: false))
+  ```
+  Find experimental functions in DataManager Module -> Settings Module
+  ```
+  - (Experimental Function) Added creating values in player
+  - (Experimental Function) Added `DataManager:UpdateData(player)` for creating/removing/updating values in folders (It does automatically in script don't worry)
+  - `DataManager:SetValue(player, path, newValue)` doesn't require `newValue` argument, right now if path is pointing to a bool value it will switch beetween true and false e.g. 
+  ```lua
+  -- Data.Folder.MyBoolValue = false
+  DataManager:SetValue(player, "Data.Folder.MyBoolValue") -- then it equals to true
+  DataManager:SetValue(player, "Data.Folder.MyBoolValue") -- and back to false :D
+  ```
+  Also if the path is for example `Data.Folder1.Folder2.Folder3.BoolValue` and neither of folders and BoolValue exists then it will automatically create all folders and bool value (with default value = true) for you!
+  
+</details>
+<details>
   <summary>r0.3bf - <strong>(06.02.2025)</strong></summary>
 
   **Server**  
